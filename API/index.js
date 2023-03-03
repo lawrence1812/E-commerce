@@ -27,7 +27,7 @@ app.get('/api/read', (req, res) => {
         if (err) {
             res.send(err);
         }
-        res.send(data);
+        res.send(data)
     });
 });
 /*
