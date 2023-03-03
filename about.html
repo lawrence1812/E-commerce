@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/root.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="website icon" href="img/logo.jpg">
+
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: var(--primary-color-E);
+        color: var(--primary-color-D);
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: var(--primary-color-E);
+    }
+
+    h2 {
+        color: var(--primary-color-A)
+    }
+
+
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>Siamo Simone Piccolo e Lawrence Canton, due soci che nell’ultimo periodo hanno aperto</p>
+        <p>questo e-commerce in cui si può trovare tutto ciò di cui avete bisogno.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div style="display: flex; justify-content: center;">
+            <div class="column">
+                <div class="card">
+                    <img src="img/speed.jpg" style="width:680px; height:510px">
+                    <div class="container">
+                        <h2>Simone Piccolo</h2>
+                        <p class="title">CEO</p>
+                        <p>Ciao sono Simone e mi occupo della programmazione e del design del nostro e-commerce</p>
+                        <p>piccolo.simone@itiscannizzaro.edu.it</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="img/tate.jpg" style="width:680px; height:510px">
+                    <div class="container">
+                        <h2>Lawrence Canton</h2>
+                        <p class="title">CEO</p>
+                        <p>Ciao sono Lawrence e mi occupo in primis della programmazione del nostro e-commerce</p>
+                        <p>canton.lawrence@itiscannizaro.edu.it</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="JS/body/header.js"></script>
+<script src="JS/body/footer.js"></script>
+
+<script>
+    genHeader();
+    genFooter();
+</script>
