@@ -1,0 +1,129 @@
+.site-header {
+    width: 100%;
+    padding: .5em 1em;
+
+    z-index: 2;
+
+
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0rem;
+
+    transition: 0.1s;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, #00000000 0%, #000000e0 100%);
+
+}
+
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+}
+
+.site-identity img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+.site-navigation a {
+    color: var(--primary-color-D);
+}
+
+.site-navigation i {
+    color: white;
+    font-size: 2rem;
+}
+
+
+/*********** Search bar ***********/
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover>.search-text {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: var(--primary-color-D);
+    color: var(--primary-color-E);
+}
+
+.search-btn {
+    color: var(--primary-color-D);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color-A);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: 0.4s;
+    animation: ease-in-out;
+}
+
+.search-btn>i {
+    font: 30px;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: var(--primary-color-D);
+    font-size: 16px;
+    font-weight: normal;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    /*   width: 250px; */
+}
+
+/*********** Badge ***********/
+
+.site-navigation a .bedge-icon {
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+    padding: 0.2rem 0.45rem;
+
+    border-radius: 50%;
+    font-size: 1rem;
+
+    background-color: var(--primary-color-A);
+    color: var(--color-white);
+    transition: 0.4s;
+    animation: ease-in-out;
+
+}
