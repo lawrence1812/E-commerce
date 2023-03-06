@@ -72,9 +72,8 @@ const genHeader = () => {
     a_li2.appendChild(cartBedgeSpan);
 
 
-
     const a_li3 = document.createElement('a');
-    a_li3.href = '#';
+    a_li3.href = 'admin.html';
     header_li3.appendChild(a_li3);
     const user = document.createElement('i');
     user.className = 'fa fa-user';

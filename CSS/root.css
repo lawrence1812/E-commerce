@@ -7,19 +7,22 @@
     --primary-color-E: #333333;
 
     --color-white: #ffff;
+    --color-black: #0000;
 
     --cartShoppingHeight: 10rem;
     
 }
 
 body {
-    font-family: Helvetica;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: var(--primary-color-E);
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--color-black);
 }
 
 
