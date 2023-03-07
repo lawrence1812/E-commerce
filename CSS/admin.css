@@ -4,46 +4,41 @@
 
 
 .mainContent {
-    width: 100%;
-    height: 100rem;
+    max-height: 50vh;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    background-color: var(--primary-color-E);
     overflow-y: scroll;
     border: solid var(--color-black) 0.1rem;
+    border-collapse: collapse;
 }
 
 
 
 .fl-table {
-    
-
-    margin: 10vh 0;
+    margin: 1rem;
     overflow-y: scroll;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5rem 5rem 0 0;
     border-collapse: collapse;
     box-shadow: 0 0 2rem var(--primary-color-C);
+    text-align: center;
+    font-weight: bold;
 }
 
 
 .fl-table thead tr {
     background-color: var(--tableColor);
     color: var(--color-white);
-    text-align: center;
-    font-weight: bold;
+    
 }
 
 .fl-table td {
     padding: 2rem 8rem;
-    /*border: 2px solid var(--tableColor);
-    da eliminare*/
 }
 
 .fl-table tbody tr {
     border-bottom: 0.8px solid var(--color-white);
-    text-align: center;
 }
 
 /*style esclusivo per elementi posti in posizione pari nella sezione body della tabella*/
@@ -67,36 +62,53 @@
     color: var(--tableColor);
 }
 
-.fl-table tbody select,
-input {
-    border: solid var(--primary-color-A) 0.1rem;
-    min-width: 4rem;
-    max-width: 15rem;
+.fl-table tbody input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    color: var(--primary-color-B);
+    background-color: var(--color-white);
+    border: 0.1rem solid var(--primary-color-D);
+    border-radius: 1rem;
+    box-shadow: 0px 1px 6px var(--primary-color-D);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+        appearance: none;
 }
 
-.fl-table tbody select,
-input[type="text"] {
-
-}
-.fl-table tbody select,
-input[type="number"] {
-
-}
-.fl-table tbody select,
-input[type="file"] {
+.fl-table tbody input[type="text"] {
     
 }
 
 
-.button {
+.fl-table tbody 
+input[type="number"] {
+
+}
+.fl-table tbody input[type="file"] {
+    
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+.fl-table tbody input[type="file"]:hover {
+    opacity: 100%;
+    background-color: var(--primary-color-A);
+}
+
+
+button {
     color: var(--tableColor);
-    font-size: large;
     font-weight: bold;
+    font-size: larger;
     cursor: pointer;
     margin: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
-    border-radius: 0rem;
-    border: solid black 1px;
+    border-radius: 1rem;
+    border: solid var(--tableColor) 0.1rem;
 }
 
