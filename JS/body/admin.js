@@ -111,7 +111,7 @@ const genTb = () => {
                 document.querySelector('#popup').removeChild(boxContent);
             }
             const removeIcon = document.createElement('i');
-            removeIcon.className = 'fa fa-user';
+            removeIcon.className = 'fa fa-trash';
 
             btContent.appendChild(btRemove);
             btRemove.appendChild(removeIcon);
